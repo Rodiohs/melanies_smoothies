@@ -1,4 +1,4 @@
-# Import python packages
+rch_on# Import python packages
 import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
@@ -51,7 +51,7 @@ if ingredients_list:
         #st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
 
 
-        st.subheader(fruit_chosen + 'Nutrition Information')
+        st.subheader(search_on + ' Nutrition Information')
 
 
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + search_on)
